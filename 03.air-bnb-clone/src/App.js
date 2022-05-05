@@ -39,8 +39,8 @@ function App() {
       <Navbar />
       <HeroSection />
       <div className="cards-grid">
-        {card.map((item) => {
-          return <Card {...item} />;
+        {card.map((item, index) => {
+          return <Card {...item} key={index}/>;
         })}
       </div>
     </div>
