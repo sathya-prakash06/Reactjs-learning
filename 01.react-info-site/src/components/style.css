@@ -26,25 +26,34 @@
   flex-direction: column;
   padding: 20px;
   line-height: 30px;
-  background-color: #33373e;
+  background-color: #33373ef3;
   color: #fff;
+
+  background-image: url("../assets/icon-bg.png");
+  background-repeat: no-repeat;
+  background-position: right 50%;
 }
 
-.react-sec ul li {
+/* .react-sec ul li {
   list-style: none;
-}
-.react-sec li::before {
+} */
+/* .react-sec li::before {
   content: "\2022";
   color: cyan;
   font-weight: bold;
   display: inline-block;
   width: 1em;
   margin-left: -1em;
+} */
+
+.react-sec ul li::marker {
+  font-size: 1.2rem;
+  color: aqua;
 }
 /***************  FOOTER   ********************/
 
 footer {
-    height: 3vh;
+  height: 3vh;
   background-color: #21222a;
   padding: 10px;
   color: #fff;
