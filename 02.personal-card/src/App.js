@@ -3,7 +3,7 @@ import BussinessCard from "./components/BussinessCard";
 
 function App() {
   return (
-    <div>
+    <div className="App">
       <BussinessCard />
     </div>
   );
