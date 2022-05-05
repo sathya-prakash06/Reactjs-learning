@@ -14,6 +14,7 @@ const card = [
     country: "USA",
     price: "$136",
     title: "Life lessons with Katie Zaferes",
+    openSpot: "0",
   },
   {
     img: two,
@@ -22,6 +23,7 @@ const card = [
     country: "USA",
     price: "$125",
     title: "Learn wedding photography",
+    openSpot: "2",
   },
   {
     img: three,
@@ -30,6 +32,7 @@ const card = [
     country: "USA",
     price: "$50",
     title: "Group Mountain Biking",
+    openSpot: "1",
   },
 ];
 

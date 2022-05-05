@@ -1,9 +1,7 @@
 import React from "react";
 import "./card.css";
 
-
-
-const Card = ({ img, rating, reviews, country, price, title }) => {
+const Card = ({ img, rating, reviews, country, price, title, openSpot }) => {
   return (
     <div className="card">
       <img src={img} alt="" width="100%" className="card-img" />
@@ -20,6 +18,10 @@ const Card = ({ img, rating, reviews, country, price, title }) => {
       <p>{title}</p>
       <div>
         <strong>From {price}</strong>/Person
+      </div>
+
+      <div className="card-spot">
+        {openSpot == 0 ? <bold>SOLD OUT</bold> : <bold>ONLINE</bold>}
       </div>
     </div>
   );
