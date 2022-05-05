@@ -1,0 +1,36 @@
+/***************  NAVBAR   ********************/
+
+.nav-cont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #21222a;
+  padding: 10px;
+}
+
+.nav-cont ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  list-style: none;
+  color: #fff;
+}
+
+/***************  React Section   ********************/
+.react-sec {
+  box-sizing: border-box;
+  height: 81vh;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  line-height: 30px;
+}
+/***************  FOOTER   ********************/
+
+footer {
+  background-color: #21222a;
+  padding: 10px;
+  color: #fff;
+  text-align: center;
+}
