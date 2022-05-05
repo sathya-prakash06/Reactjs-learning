@@ -13,11 +13,11 @@ const ReactSection = () => {
     <div className="react-sec">
       <h1>Fun facts about React</h1>
 
-      <ol>
+      <ul>
         {arr.map((item) => {
           return <li>{item}</li>;
         })}
-      </ol>
+      </ul>
     </div>
   );
 };

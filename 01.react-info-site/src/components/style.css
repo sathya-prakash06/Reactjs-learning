@@ -6,6 +6,7 @@
   align-items: center;
   background-color: #21222a;
   padding: 10px;
+  height: 12vh;
 }
 
 .nav-cont ul {
@@ -20,15 +21,30 @@
 /***************  React Section   ********************/
 .react-sec {
   box-sizing: border-box;
-  height: 81vh;
+  height: 79vh;
   display: flex;
   flex-direction: column;
   padding: 20px;
   line-height: 30px;
+  background-color: #33373e;
+  color: #fff;
+}
+
+.react-sec ul li {
+  list-style: none;
+}
+.react-sec li::before {
+  content: "\2022";
+  color: cyan;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
 }
 /***************  FOOTER   ********************/
 
 footer {
+    height: 3vh;
   background-color: #21222a;
   padding: 10px;
   color: #fff;
