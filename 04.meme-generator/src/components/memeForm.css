@@ -16,7 +16,7 @@
 .input-cont input {
   width: 80%;
   height: 30px;
-  font-size: 1.0rem;
+  font-size: 1rem;
   color: #000;
 }
 
@@ -41,4 +41,9 @@
 .meme-btn button:hover {
   background: linear-gradient(90deg, #b92c69 1.18%, #d39f26 100%);
   border-radius: 20px;
+}
+
+.meme-img {
+  height: 300px;
+  width: 100%;
 }

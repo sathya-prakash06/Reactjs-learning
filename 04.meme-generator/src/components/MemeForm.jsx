@@ -3,13 +3,19 @@ import "./memeForm.css";
 import data from "../jsonData/memes.json";
 
 const MemeForm = () => {
-  const [memes, setMemes] = useState("");
+  const [memes, setMemes] = useState({
+    topText: "",
+    bottomText: "",
+    randomeImage: "https://i.imgflip.com/1g8my4.jpg",
+  });
+
+  const [allMemes, setAllMemes] = useState(data);
 
   const handleClick = () => {
     console.log("clicked");
-    let randomIndex = Math.floor(Math.random() * data.data.memes.length);
-    let memes = data.data.memes[randomIndex].url;
-    setMemes(memes);
+    let randomIndex = Math.floor(Math.random() * allMemes.data.memes.length);
+    let memes = allMemes.data.memes[randomIndex].url;
+    setMemes({ ...memes, randomeImage: memes });
   };
   return (
     <main>
@@ -23,7 +29,9 @@ const MemeForm = () => {
         <button onClick={handleClick}>Get a new meme image</button>
       </div>
 
-      <div>{memes && <img src={memes} alt="memes_img" />}</div>
+      <div>
+        <img src={memes.randomeImage} alt="memes_img" className="meme-img"/>
+      </div>
     </main>
   );
 };
