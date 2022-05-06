@@ -1,0 +1,20 @@
+.nav-cont {
+  width: 100%;
+  color: #fff;
+  height: 80px;
+  background: linear-gradient(90deg, #672280 1.18%, #a626d3 100%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.nav-img {
+  width: 50px;
+}
+.nav-left-cont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
