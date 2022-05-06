@@ -17,20 +17,42 @@ const MemeForm = () => {
     let memes = allMemes.data.memes[randomIndex].url;
     setMemes({ ...memes, randomeImage: memes });
   };
+
+  const handleChange = (e) => {
+    setMemes({ ...memes, [e.target.name]: e.target.value });
+  };
   return (
     <main>
       <form action="">
         <div className="input-cont">
-          <input type="text" placeholder="Top text" />
-          <input type="text" placeholder="Bottom text" />
+          <input
+            type="text"
+            placeholder="Top text"
+            value={memes.topText}
+            name="topText"
+            onChange={handleChange}
+          />
+          <input
+            type="text"
+            placeholder="Bottom text"
+            name="bottomText"
+            value={memes.bottomText}
+            onChange={handleChange}
+          />
         </div>
       </form>
       <div className="meme-btn">
         <button onClick={handleClick}>Get a new meme image</button>
       </div>
 
-      <div>
-        <img src={memes.randomeImage} alt="memes_img" className="meme-img"/>
+      <div className="meme-img-cont">
+        <img src={memes.randomeImage} alt="memes_img" className="meme-img" />
+        <div className="meme-top-text">
+          <h1>{memes.topText}</h1>
+        </div>
+        <div className="meme-bottom-text">
+          <h1>{memes.bottomText}</h1>
+        </div>
       </div>
     </main>
   );
