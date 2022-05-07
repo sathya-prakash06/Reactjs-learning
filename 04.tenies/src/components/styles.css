@@ -1,0 +1,44 @@
+main {
+  border: 25px solid #0b2434;
+  height: 100vh;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.dice-cont {
+  display: grid;
+  grid-template: auto auto / repeat(5, 1fr);
+  gap: 5px;
+}
+.die-face {
+  height: 70px;
+  width: 70px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.roll-btn {
+  height: 50px;
+  width: 100px;
+  background-color: #0b2434;
+  color: #fff;
+  background-color: #5035ff;
+  border-radius: 6px;
+  border: none;
+  font-weight: bolder;
+  margin-top: 50px;
+}
+
+.roll-btn:focus {
+  outline: none;
+}
+.dec-text {
+    text-align: center;
+    font-weight: bolder;
+    color: red;
+}
