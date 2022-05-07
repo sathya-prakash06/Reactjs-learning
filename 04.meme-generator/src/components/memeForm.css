@@ -44,16 +44,18 @@
 }
 .meme-img-cont {
   position: relative;
-  color: red;
+  color: #fff;
   display: flex;
   justify-content: center;
+  font-weight: bolder;
+  padding: 0 5px;
 }
 .meme-img {
-  height: 300px;
+  width: 400px;
 }
 
 .meme-top-text {
-  width: 100%;
+  width: 80%;
   min-height: 50px;
   position: absolute;
   top: 0;
