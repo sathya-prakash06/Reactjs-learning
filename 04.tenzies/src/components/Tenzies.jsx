@@ -47,7 +47,8 @@ const Tenzies = () => {
 
   useEffect(() => {
     const allHeld = dice.every((die) => die.isHeld);
-    allHeld ? setTezies(true) : setTezies(false);
+    const allValSame = dice.every((die) => die.value === dice[0].value);
+    allHeld && allValSame ? setTezies(true) : setTezies(false);
   }, [dice]);
   return (
     <main>
